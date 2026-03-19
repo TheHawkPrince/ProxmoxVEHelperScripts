@@ -153,7 +153,7 @@ rm -f /tmp/get-pip.py
 msg_ok "Bootstrapped pip"
 
 msg_info "Installing Python Dependencies"
-$STD pip3 install -r /opt/frigate/docker/main/requirements.txt
+$STD pip3 install --no-cache-dir -r /opt/frigate/docker/main/requirements.txt
 msg_ok "Installed Python Dependencies"
 
 msg_info "Building Python Wheels (Patience)"
